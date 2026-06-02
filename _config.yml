@@ -1,0 +1,8 @@
+title: LolzTeam MCP
+description: Lolzteam Market и Forum в Claude через MCP
+theme: jekyll-theme-cayman
+show_downloads: true
+github:
+  is_project_page: true
+  repository_url: https://github.com/skallekss/lolzteam-mcp
+  repository_nwo: skallekss/lolzteam-mcp

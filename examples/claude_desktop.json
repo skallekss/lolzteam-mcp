@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "lolzteam": {
+      "command": "python",
+      "args": ["-m", "lolzteam_mcp"],
+      "env": {
+        "LOLZTEAM_TOKEN": "ВАШ_ТОКЕН_СЮДА"
+      }
+    }
+  }
+}

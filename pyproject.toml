@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lolzteam-mcp"
+version = "0.1.0"
+description = "MCP-сервер для Lolzteam Market — Claude и другие LLM могут пользоваться всеми 117 методами маркета как обычными инструментами"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "skallekss" }]
+keywords = ["mcp", "lolzteam", "lzt", "market", "claude", "llm", "anthropic"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mcp>=1.2.0",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+lolzteam-mcp = "lolzteam_mcp.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/skallekss/lolzteam-mcp"
+Issues = "https://github.com/skallekss/lolzteam-mcp/issues"
+Lolzteam = "https://lzt.market"
+API = "https://lzt-market.readme.io/"
+
+[tool.setuptools]
+packages = ["lolzteam_mcp"]
+
+[tool.setuptools.package-data]
+lolzteam_mcp = ["specs/*.json"]
